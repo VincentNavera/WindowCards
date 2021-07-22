@@ -15,6 +15,8 @@
 		BDAEC2D426A9634900E8401B /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEC2D326A9634800E8401B /* VisualEffectView.swift */; };
 		BDAEC2D626A966CE00E8401B /* DifficultyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEC2D526A966CE00E8401B /* DifficultyCardView.swift */; };
 		BDAEC2DA26A9763800E8401B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEC2D926A9763800E8401B /* OnboardingView.swift */; };
+		BDAEC2DC26A9C0A800E8401B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEC2DB26A9C0A800E8401B /* GameView.swift */; };
+		BDAEC2DE26A9C12300E8401B /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEC2DD26A9C12300E8401B /* KeyboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		BDAEC2D326A9634800E8401B /* VisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 		BDAEC2D526A966CE00E8401B /* DifficultyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyCardView.swift; sourceTree = "<group>"; };
 		BDAEC2D926A9763800E8401B /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		BDAEC2DB26A9C0A800E8401B /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		BDAEC2DD26A9C12300E8401B /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				BDA814FB26A8399700690FE1 /* WindowCardsApp.swift */,
 				BDA814FD26A8399700690FE1 /* ContentView.swift */,
 				BDAEC2D126A9619900E8401B /* DifficultyView.swift */,
+				BDAEC2DB26A9C0A800E8401B /* GameView.swift */,
+				BDAEC2DD26A9C12300E8401B /* KeyboardView.swift */,
 				BDAEC2D326A9634800E8401B /* VisualEffectView.swift */,
 				BDAEC2D926A9763800E8401B /* OnboardingView.swift */,
 				BDAEC2D526A966CE00E8401B /* DifficultyCardView.swift */,
@@ -151,11 +157,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDAEC2D226A9619900E8401B /* DifficultyView.swift in Sources */,
+				BDAEC2DE26A9C12300E8401B /* KeyboardView.swift in Sources */,
 				BDAEC2D426A9634900E8401B /* VisualEffectView.swift in Sources */,
 				BDA814FE26A8399700690FE1 /* ContentView.swift in Sources */,
 				BDAEC2DA26A9763800E8401B /* OnboardingView.swift in Sources */,
 				BDA814FC26A8399700690FE1 /* WindowCardsApp.swift in Sources */,
 				BDAEC2D626A966CE00E8401B /* DifficultyCardView.swift in Sources */,
+				BDAEC2DC26A9C0A800E8401B /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
