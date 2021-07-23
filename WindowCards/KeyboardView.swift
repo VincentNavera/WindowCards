@@ -13,8 +13,8 @@ struct KeyboardView: View {
         VStack {
             Rectangle()
                 .foregroundColor(.clear)
-            ForEach(0..<16) {_ in
-                Spacer()}
+
+            Spacer(minLength: 125)
             ZStack {
                 VisualEffectView(style: .systemUltraThinMaterial)
 
