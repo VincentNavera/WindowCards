@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct DifficultyView: View {
+
+    var difficulty = Difficulties()
+    @State private var selectedDifficulty = ""
+
     var body: some View {
         ZStack{
             Rectangle()
-//                .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9810667634, blue: 0.5736914277, alpha: 1)))
                 .foregroundColor(.clear)
                 .background(Image("background")
                                 .resizable()
@@ -21,15 +24,16 @@ struct DifficultyView: View {
                 .ignoresSafeArea()
 
             ScrollView {
-                LazyVStack {
-                    ForEach(0..<6) {_ in
-                        DifficultyCardView()
+                VStack {
+                    ForEach(0..<difficulty.difficulties.count) { option in
+                        let options = difficulty.difficulties
+                        DifficultyCardView(cardTitle: options[option].title, cardSubtitle: options[option].subtitle)
                             .padding()
                             .onTapGesture {
-
+                                selectedDifficulty = options[option].title
                             }
-
                     }
+
                 }
             }
 

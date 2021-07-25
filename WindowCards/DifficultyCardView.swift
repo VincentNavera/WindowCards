@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DifficultyCardView: View {
+    var cardTitle: String
+    var cardSubtitle: String
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25.0, style: .continuous)
@@ -15,10 +17,10 @@ struct DifficultyCardView: View {
                 .background(VisualEffectView(style: .systemMaterial)
                                 .cornerRadius(25))
             VStack {
-                Text("A1")
+                Text(cardTitle)
                     .font(.largeTitle)
 
-                Text("Addition (1 digit)")
+                Text(cardSubtitle)
                     .font(.subheadline)
             }
         }
@@ -29,6 +31,6 @@ struct DifficultyCardView: View {
 
 struct DifficultyCardView_Previews: PreviewProvider {
     static var previews: some View {
-        DifficultyCardView()
+        DifficultyCardView(cardTitle: "A1", cardSubtitle: "Addition (1 digit)")
     }
 }
