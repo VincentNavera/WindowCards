@@ -11,8 +11,6 @@ struct KeyboardView: View {
     @State private var input: Int?
     var body: some View {
         VStack {
-            Rectangle()
-                .foregroundColor(.clear)
 
             Spacer(minLength: 125)
             ZStack {
@@ -65,16 +63,41 @@ struct KeyboardView: View {
 
                         }
                     }
-                    ZStack {
-                        VisualEffectView(style: .systemUltraThinMaterial)
-                            .clipShape(Circle())
-                        
-                        Text("0")
-                            .font(.largeTitle)
+                    HStack {
+                        ZStack {
+                            VisualEffectView(style: .systemUltraThinMaterial)
+                                .clipShape(Circle())
+
+                            Image(systemName: "delete.left")
+                                .font(.largeTitle)
+                        }
+                        .frame(alignment: .center)
+                        .padding(5.0)
+                        .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 2)
+
+
+                        ZStack {
+                            VisualEffectView(style: .systemUltraThinMaterial)
+                                .clipShape(Circle())
+
+                            Text("0")
+                                .font(.largeTitle)
+                        }
+                        .frame(alignment: .center)
+                        .padding(5.0)
+                        .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 2)
+
+                        ZStack {
+                            VisualEffectView(style: .systemUltraThinMaterial)
+                                .clipShape(Circle())
+
+                            Text("Submit")
+                                .font(.title)
+                        }
+                        .frame(alignment: .center)
+                        .padding(5.0)
+                        .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 2)
                     }
-                    .frame(alignment: .center)
-                    .padding(5.0)
-                    .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 2)
 
 
 

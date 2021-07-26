@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @Binding var selectedDifficulty: String
     var body: some View {
-        KeyboardView()
-            .background(Image("background"))
+
+        Text("")
     }
 
     func updateUI() {

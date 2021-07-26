@@ -15,8 +15,12 @@ struct GameView: View {
     var body: some View {
         VStack {
             Text(String(n1))
+                .multilineTextAlignment(.trailing)
             Text(operatorSymbol)
+                .multilineTextAlignment(.leading)
             Text(String(n2))
+                .multilineTextAlignment(.trailing)
+            Divider()
         }
 
     }
