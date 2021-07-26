@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct GameView: View {
+    @Binding var selectedDiffficulty: String
+    var operatorSymbol: String
+    var n1: Int
+    var n2: Int
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(String(n1))
+            Text(operatorSymbol)
+            Text(String(n2))
+        }
+
     }
+
+
 }
+
+
+
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView()
+        GameView(selectedDiffficulty: .constant("A1"), operatorSymbol: "+", n1: 2, n2: 5)
     }
 }

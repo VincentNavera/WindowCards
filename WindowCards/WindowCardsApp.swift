@@ -11,7 +11,7 @@ import SwiftUI
 struct WindowCardsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(selectedDifficulty:.constant("A1"))
         }
     }
 }
