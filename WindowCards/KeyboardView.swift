@@ -105,6 +105,7 @@ struct KeyboardView: View {
 
                         Text("Submit")
                             .font(.title2)
+                            .fontWeight(.bold)
                             .foregroundColor(ColorPalette().white)
                     }
                     .frame(alignment: .center)

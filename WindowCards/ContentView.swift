@@ -15,6 +15,7 @@ struct ContentView: View {
         ZStack {
             let background = colorScheme == .dark ? ColorPalette().blue : ColorPalette().white
             background
+                .ignoresSafeArea()
             VStack{
 
 
