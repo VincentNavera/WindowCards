@@ -8,10 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
     @Binding var selectedDifficulty: String
     var body: some View {
 
-        Text("")
+        ZStack {
+            let background = colorScheme == .dark ? ColorPalette().blue : ColorPalette().white
+            background
+            VStack{
+
+
+
+                GameCardView(selectedDiffficulty: $selectedDifficulty, operatorSymbol: "+", n1: 2, n2: 5)
+                    .padding(.vertical, 50)
+
+                KeyboardView()
+            }
+        }
     }
 
     func updateUI() {
@@ -36,6 +49,13 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+
         ContentView(selectedDifficulty:.constant("A1"))
+            .previewLayout(PreviewLayout.sizeThatFits)
+            .preferredColorScheme(.light)
+        ContentView(selectedDifficulty:.constant("A1"))
+            .previewLayout(PreviewLayout.sizeThatFits)
+            .preferredColorScheme(.dark)
+
     }
 }
