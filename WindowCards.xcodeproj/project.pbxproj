@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD401A3026B2DEA90062EFC2 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD401A2F26B2DEA90062EFC2 /* ColorPalette.swift */; };
+		BD401A3226B2FB220062EFC2 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD401A3126B2FB220062EFC2 /* ResultsView.swift */; };
 		BDA814FC26A8399700690FE1 /* WindowCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA814FB26A8399700690FE1 /* WindowCardsApp.swift */; };
 		BDA814FE26A8399700690FE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA814FD26A8399700690FE1 /* ContentView.swift */; };
 		BDA8150026A8399800690FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDA814FF26A8399800690FE1 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		BD401A2F26B2DEA90062EFC2 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		BD401A3126B2FB220062EFC2 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		BDA814F826A8399700690FE1 /* WindowCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindowCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA814FB26A8399700690FE1 /* WindowCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowCardsApp.swift; sourceTree = "<group>"; };
 		BDA814FD26A8399700690FE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				BDA814FD26A8399700690FE1 /* ContentView.swift */,
 				BDAEC2DB26A9C0A800E8401B /* GameCardView.swift */,
 				BDAEC2DD26A9C12300E8401B /* KeyboardView.swift */,
+				BD401A3126B2FB220062EFC2 /* ResultsView.swift */,
 				BDAEC2D326A9634800E8401B /* VisualEffectView.swift */,
 				BDAEC2D926A9763800E8401B /* OnboardingView.swift */,
 				BDAEC2D126A9619900E8401B /* DifficultyView.swift */,
@@ -167,6 +170,7 @@
 				BDAEC2D426A9634900E8401B /* VisualEffectView.swift in Sources */,
 				BDCB4AA426AE02CE00FE3AB6 /* Difficulties.swift in Sources */,
 				BDA814FE26A8399700690FE1 /* ContentView.swift in Sources */,
+				BD401A3226B2FB220062EFC2 /* ResultsView.swift in Sources */,
 				BD401A3026B2DEA90062EFC2 /* ColorPalette.swift in Sources */,
 				BDAEC2DA26A9763800E8401B /* OnboardingView.swift in Sources */,
 				BDA814FC26A8399700690FE1 /* WindowCardsApp.swift in Sources */,
