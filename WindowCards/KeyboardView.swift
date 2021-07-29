@@ -65,7 +65,7 @@ struct KeyboardView: View {
                     }
                     HStack {
                         ZStack {
-                            VisualEffectView(style: .systemUltraThinMaterial)
+                            Color(.clear)
                                 .clipShape(Circle())
 
                             Image(systemName: "delete.left")
@@ -88,7 +88,7 @@ struct KeyboardView: View {
                         .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 2)
 
                         ZStack {
-                            VisualEffectView(style: .systemUltraThinMaterial)
+                            Color(.clear)
                                 .clipShape(Circle())
 
                             Text("Submit")
