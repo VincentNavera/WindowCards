@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct KeyboardView: View {
+    @Environment(\.colorScheme) var colorScheme
     @State private var input: Int?
     var body: some View {
+        let shadowColor = colorScheme == .dark ? ColorPalette().dshadowColor : ColorPalette().lShadowColor2
         VStack {
 
             Spacer(minLength: 125)
             ZStack {
                 Rectangle()
-                    .overlay(ColorPalette().baseColor.opacity(25))
+                    .overlay(colorScheme == .dark ? ColorPalette().blue.opacity(25) : ColorPalette().orange)
 
                 VStack {
                     HStack {
@@ -23,13 +25,14 @@ struct KeyboardView: View {
                             ZStack {
                                 ColorPalette().accentColor
                                     .clipShape(Circle())
+                                    .shadow(color: shadowColor, radius: 4)
                                 Text("\(num)")
                                     .font(.largeTitle)
-                                    .foregroundColor(ColorPalette().baseColor)
+                                    .foregroundColor(ColorPalette().blue)
 
                             }
                             .padding(5.0)
-                            .shadow(color: ColorPalette().shadowColor, radius: 25)
+
 
                         }
                     }
@@ -39,13 +42,14 @@ struct KeyboardView: View {
                             ZStack {
                                 ColorPalette().accentColor
                                     .clipShape(Circle())
+                                    .shadow(color: shadowColor, radius: 4)
                                 Text("\(num)")
                                     .font(.largeTitle)
-                                    .foregroundColor(ColorPalette().baseColor)
+                                    .foregroundColor(ColorPalette().blue)
 
                             }
                             .padding(5.0)
-                            .shadow(color: ColorPalette().shadowColor, radius: 25)
+
 
 
                         }
@@ -56,13 +60,14 @@ struct KeyboardView: View {
                             ZStack {
                                 ColorPalette().accentColor
                                     .clipShape(Circle())
+                                    .shadow(color: shadowColor, radius: 4)
                                 Text("\(num)")
                                     .font(.largeTitle)
-                                    .foregroundColor(ColorPalette().baseColor)
+                                    .foregroundColor(ColorPalette().blue)
 
                             }
                             .padding(5.0)
-                            .shadow(color: ColorPalette().shadowColor, radius: 25)
+
 
 
                         }
@@ -74,7 +79,7 @@ struct KeyboardView: View {
 
                             Image(systemName: "delete.left")
                                 .font(.largeTitle)
-                                .foregroundColor(ColorPalette().secondaryColor)
+                                .foregroundColor(ColorPalette().white)
                         }
                         .frame(alignment: .center)
                         .padding(5.0)
@@ -84,14 +89,15 @@ struct KeyboardView: View {
                         ZStack {
                             ColorPalette().accentColor
                                 .clipShape(Circle())
+                                .shadow(color: shadowColor, radius: 4)
 
                             Text("0")
                                 .font(.largeTitle)
-                                .foregroundColor(ColorPalette().baseColor)
+                                .foregroundColor(ColorPalette().blue)
                         }
                         .frame(alignment: .center)
                         .padding(5.0)
-                        .shadow(color: ColorPalette().shadowColor, radius: 25)
+
 
                         ZStack {
                             Color(.clear)
@@ -99,7 +105,7 @@ struct KeyboardView: View {
 
                             Text("Submit")
                                 .font(.title)
-                                .foregroundColor(ColorPalette().secondaryColor)
+                                .foregroundColor(ColorPalette().white)
                         }
                         .frame(alignment: .center)
                         .padding(5.0)
@@ -125,5 +131,11 @@ struct KeyboardView: View {
 struct KeyboardView_Previews: PreviewProvider {
     static var previews: some View {
         KeyboardView()
+            .previewLayout(PreviewLayout.sizeThatFits)
+            .preferredColorScheme(.light)
+        KeyboardView()
+            .previewLayout(PreviewLayout.sizeThatFits)
+            .preferredColorScheme(.dark)
+
     }
 }

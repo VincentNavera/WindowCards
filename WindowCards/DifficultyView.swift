@@ -9,14 +9,20 @@ import SwiftUI
 
 struct DifficultyView: View {
 
+    @Environment(\.colorScheme) var colorScheme
+
+
+
     var difficulty = Difficulties()
     @State private var selectedDifficulty = ""
 
     var body: some View {
+
+
         ZStack{
             Rectangle()
                 .foregroundColor(.clear)
-                .background(ColorPalette().baseColor)
+                .background(colorScheme == .dark ? ColorPalette().blue : ColorPalette().white)
                 .ignoresSafeArea()
 
             ScrollView {
@@ -43,5 +49,10 @@ struct DifficultyView: View {
 struct DifficultyView_Previews: PreviewProvider {
     static var previews: some View {
         DifficultyView()
+            .previewLayout(PreviewLayout.sizeThatFits)
+            .preferredColorScheme(.light)
+        DifficultyView()
+            .previewLayout(PreviewLayout.sizeThatFits)
+            .preferredColorScheme(.dark)
     }
 }
