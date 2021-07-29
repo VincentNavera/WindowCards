@@ -14,20 +14,22 @@ struct KeyboardView: View {
 
             Spacer(minLength: 125)
             ZStack {
-                VisualEffectView(style: .systemUltraThinMaterial)
+                Rectangle()
+                    .overlay(ColorPalette().baseColor.opacity(25))
 
                 VStack {
                     HStack {
                         ForEach(1..<4) { num in
                             ZStack {
-                                VisualEffectView(style: .systemUltraThinMaterial)
+                                ColorPalette().accentColor
                                     .clipShape(Circle())
                                 Text("\(num)")
                                     .font(.largeTitle)
+                                    .foregroundColor(ColorPalette().baseColor)
 
                             }
                             .padding(5.0)
-                            .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 2)
+                            .shadow(color: ColorPalette().shadowColor, radius: 25)
 
                         }
                     }
@@ -35,14 +37,15 @@ struct KeyboardView: View {
                     HStack {
                         ForEach(4..<7) { num in
                             ZStack {
-                                VisualEffectView(style: .systemUltraThinMaterial)
+                                ColorPalette().accentColor
                                     .clipShape(Circle())
                                 Text("\(num)")
                                     .font(.largeTitle)
+                                    .foregroundColor(ColorPalette().baseColor)
 
                             }
                             .padding(5.0)
-                            .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 2)
+                            .shadow(color: ColorPalette().shadowColor, radius: 25)
 
 
                         }
@@ -51,14 +54,15 @@ struct KeyboardView: View {
                     HStack {
                         ForEach(7..<10) { num in
                             ZStack {
-                                VisualEffectView(style: .systemUltraThinMaterial)
+                                ColorPalette().accentColor
                                     .clipShape(Circle())
                                 Text("\(num)")
                                     .font(.largeTitle)
+                                    .foregroundColor(ColorPalette().baseColor)
 
                             }
                             .padding(5.0)
-                            .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 2)
+                            .shadow(color: ColorPalette().shadowColor, radius: 25)
 
 
                         }
@@ -70,22 +74,24 @@ struct KeyboardView: View {
 
                             Image(systemName: "delete.left")
                                 .font(.largeTitle)
+                                .foregroundColor(ColorPalette().secondaryColor)
                         }
                         .frame(alignment: .center)
                         .padding(5.0)
-                        .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 2)
+
 
 
                         ZStack {
-                            VisualEffectView(style: .systemUltraThinMaterial)
+                            ColorPalette().accentColor
                                 .clipShape(Circle())
 
                             Text("0")
                                 .font(.largeTitle)
+                                .foregroundColor(ColorPalette().baseColor)
                         }
                         .frame(alignment: .center)
                         .padding(5.0)
-                        .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 2)
+                        .shadow(color: ColorPalette().shadowColor, radius: 25)
 
                         ZStack {
                             Color(.clear)
@@ -93,10 +99,11 @@ struct KeyboardView: View {
 
                             Text("Submit")
                                 .font(.title)
+                                .foregroundColor(ColorPalette().secondaryColor)
                         }
                         .frame(alignment: .center)
                         .padding(5.0)
-                        .shadow(color: .black.opacity(0.3), radius: 5, x: 0, y: 2)
+
                     }
 
 

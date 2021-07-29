@@ -13,9 +13,7 @@ struct DifficultyCardView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25.0, style: .continuous)
-                .foregroundColor(.clear)
-                .background(VisualEffectView(style: .systemMaterial)
-                                .cornerRadius(25))
+                .foregroundColor(ColorPalette().baseColor)
             VStack {
                 Text(cardTitle)
                     .font(.largeTitle)
@@ -23,8 +21,10 @@ struct DifficultyCardView: View {
                 Text(cardSubtitle)
                     .font(.subheadline)
             }
+            .foregroundColor(ColorPalette().secondaryColor)
         }
         .frame(height: 200)
+        .shadow(color: ColorPalette().shadowColor, radius: 25)
         .padding(.horizontal, 50)
     }
 }

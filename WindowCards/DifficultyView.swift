@@ -16,11 +16,7 @@ struct DifficultyView: View {
         ZStack{
             Rectangle()
                 .foregroundColor(.clear)
-                .background(Image("background")
-                                .resizable()
-                                
-                                
-                                )
+                .background(ColorPalette().baseColor)
                 .ignoresSafeArea()
 
             ScrollView {

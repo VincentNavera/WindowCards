@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD401A3026B2DEA90062EFC2 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD401A2F26B2DEA90062EFC2 /* ColorPalette.swift */; };
 		BDA814FC26A8399700690FE1 /* WindowCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA814FB26A8399700690FE1 /* WindowCardsApp.swift */; };
 		BDA814FE26A8399700690FE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA814FD26A8399700690FE1 /* ContentView.swift */; };
 		BDA8150026A8399800690FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDA814FF26A8399800690FE1 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD401A2F26B2DEA90062EFC2 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		BDA814F826A8399700690FE1 /* WindowCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindowCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA814FB26A8399700690FE1 /* WindowCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowCardsApp.swift; sourceTree = "<group>"; };
 		BDA814FD26A8399700690FE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				BDAEC2D326A9634800E8401B /* VisualEffectView.swift */,
 				BDAEC2D926A9763800E8401B /* OnboardingView.swift */,
 				BDAEC2D126A9619900E8401B /* DifficultyView.swift */,
+				BD401A2F26B2DEA90062EFC2 /* ColorPalette.swift */,
 				BDCB4AA326AE02CE00FE3AB6 /* Difficulties.swift */,
 				BDAEC2D526A966CE00E8401B /* DifficultyCardView.swift */,
 				BDA814FF26A8399800690FE1 /* Assets.xcassets */,
@@ -164,6 +167,7 @@
 				BDAEC2D426A9634900E8401B /* VisualEffectView.swift in Sources */,
 				BDCB4AA426AE02CE00FE3AB6 /* Difficulties.swift in Sources */,
 				BDA814FE26A8399700690FE1 /* ContentView.swift in Sources */,
+				BD401A3026B2DEA90062EFC2 /* ColorPalette.swift in Sources */,
 				BDAEC2DA26A9763800E8401B /* OnboardingView.swift in Sources */,
 				BDA814FC26A8399700690FE1 /* WindowCardsApp.swift in Sources */,
 				BDAEC2D626A966CE00E8401B /* DifficultyCardView.swift in Sources */,
