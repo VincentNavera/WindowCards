@@ -15,7 +15,9 @@ struct KeyboardView: View {
 
         ZStack {
             Rectangle()
+                .foregroundColor(.clear)
                 .overlay(colorScheme == .dark ? ColorPalette().blue.opacity(25) : ColorPalette().orange)
+                .shadow(color: shadowColor, radius: 4)
 
             VStack {
                 HStack {
